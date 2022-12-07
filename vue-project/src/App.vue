@@ -50,7 +50,7 @@ export default {
     <tbody v-for="item of showItems" :key="item.uuid">
       <tr>
         <td>{{ item.name }}</td>
-        <td><img class="w-24" :src="item.image" alt="images" /></td>
+        <td><img class="w-24" :src="item.image" :alt="images" /></td>
         <td><input type="number" v-model="item.quantity" /></td>
         <td>{{ item.price }}</td>
         <td>{{ item.quantity * item.price }}</td>
